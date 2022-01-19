@@ -9,9 +9,6 @@ function CardItem(props) {
         <div className={'cards__item__question__box' + (props.id % 3)}>
           <h5 className='cards__item__question__text'>{props.question}</h5>
         </div>
-        <div className='cards__item__info'>
-          <h5 className='cards__item__text'>{props.text}</h5>
-        </div>
       </Link>
     </li>
   );

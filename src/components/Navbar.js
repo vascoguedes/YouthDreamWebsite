@@ -14,13 +14,13 @@ class NavBar extends React.Component{
     return(
       <Navbar bg="light" expand="lg" sticky="top" id="navbar">
         <Container>
-          <Navbar.Brand href="/" className="Informado" >+ Informado</Navbar.Brand>
+          <Navbar.Brand href="/" className="Informado" >Youth Dream</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href={mainPage ? "#herosection":"/"}>Página Inicial</Nav.Link>
               {mainPage ? <Nav.Link href={"#aboutUs"}>Quem somos</Nav.Link> : null}
-              {mainPage ? <Nav.Link href={"#questions"}>Perguntas Frequentes</Nav.Link> : null}
+              {mainPage ? <Nav.Link href={"#questions"}>Os nossos projetos</Nav.Link> : null}
             </Nav>
           </Navbar.Collapse>
           {window.sessionStorage.getItem('login') ?  <Nav.Link className='endSessionButton' href="/log-in" onClick={() => window.sessionStorage.removeItem('login')}><MdOutlineLogout/>Terminar Sessão</Nav.Link>: null}

@@ -12,7 +12,7 @@
 
 .Informado {
   font-size: 25px;
-  background: -webkit-linear-gradient(rgb(119, 0, 119) 0%, rgb(255, 166, 0) 100%);
+  background: -webkit-linear-gradient(60deg, rgb(68, 175, 73) 10%, rgb(14, 0, 93) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

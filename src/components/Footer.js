@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className='footer-container'>
       <Nav.Link href={mainPage ? "#herosection":"/"} className='site-name'>
-        + Informado
+        Youth Dream
       </Nav.Link>
     </div>
   );

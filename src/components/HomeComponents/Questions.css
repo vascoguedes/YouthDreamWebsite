@@ -66,33 +66,13 @@ h1 {
   height: 125px;
 }
 
-.cards__item__question__box0 {
-  background: #ee5293;
-  padding: 20px 30px 30px;
-  height: 130px;
-}
-
 .cards__item__question__box1 {
-  background: #ff844b;
-  padding: 20px 30px 30px;
-  height: 130px;
-}
-
-.cards__item__question__box2 {
-  background: #ff5656;
+  background: #1a2a72;
   padding: 20px 30px 30px;
   height: 130px;
 }
 
 .cards__item__question__box1:hover {
-  opacity: .85;
-}
-
-.cards__item__question__box2:hover {
-  opacity: .85;
-}
-
-.cards__item__question__box3:hover {
   opacity: .85;
 }
 

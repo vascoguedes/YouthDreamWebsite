@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from "../../images/team.jpg";
 import '../../App.css';
 import './AboutUs.css';
 
@@ -9,10 +10,13 @@ class AboutUs extends React.Component {
     return (
       <div className="AboutUs" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
         
-        <h1>Quem Somos</h1>
-        <div className="AboutUs-description"> 
-          Somos um fórum para partilha de experiências, dicas e dúvidas na área da saúde. Queremos juntar as pessoas e fornecer um meio para conviverem com aqueles que vivem dias a dias semelhantes a si. <br/> Desde família, amigos, cuidadores até aos próprios doentes, qualquer um pode fazer parte deste fórum!
-        </div>
+        <div className="container">
+          <h1>Quem Somos</h1>
+          <div className="AboutUs-description"> 
+            A YOUTH DREAM é uma associação juvenil fundada em junho de 2019 com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS). Estes objetivos, adotados pela quase totalidade dos países do mundo, no contexto das Nações Unidas, definem as prioridades e aspirações do Desenvolvimento Sustentável Global para 2030.  Foi uma jovem gaiense de 17 anos, Beatriz Couto, que decidiu dar voz a este projeto e de o projetar depois com um conjunto de 8 jovens com capacidades e habilidades únicas que tornaram depois um projeto numa associação coesa e comprometida em agir com jovens e para jovens, para todos juntos transformarmos o Mundo em nome dos Povos e do Planeta, seguindo a Agenda 2030.
+          </div>
+        </div>  
+        <img className="teampic" src={Logo} />      
       </div>
     );
   }

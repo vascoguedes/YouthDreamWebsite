@@ -1,13 +1,28 @@
 .AboutUs {
     margin: 4rem;
     margin-bottom: 6rem;
+    display: flex;
+}
+
+.AboutUs .container{
+    margin-top: 2%;
 }
 
 .AboutUs-description {
     font-size: 20px;
     font-family: Arial;
-    margin-top: 1rem;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
     text-align: center;
+}
+
+
+.AboutUs .teampic {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 30%;
+    margin-right: 5%;
 }
