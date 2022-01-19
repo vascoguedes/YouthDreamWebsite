@@ -1,0 +1,34 @@
+.footer-container {
+  background-color: #d3b5a7;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+}
+
+/* Social Icons */
+
+.site-name {
+  color: #fff !important;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  
+}
+
+.site-name:hover {
+  color: #83726a !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+}
