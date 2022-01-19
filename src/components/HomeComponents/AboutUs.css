@@ -1,7 +1,14 @@
 .AboutUs {
-    margin: 4rem;
-    margin-bottom: 6rem;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
     display: flex;
+    width: 100%;
+
+    background-color: rgba(151, 205, 255, 0.151);
 }
 
 .AboutUs .container{

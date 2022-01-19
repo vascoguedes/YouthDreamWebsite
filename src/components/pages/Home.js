@@ -5,6 +5,7 @@ import HeroSection from '../HomeComponents/HeroSection';
 import AboutUs from '../HomeComponents/AboutUs.js';
 import Footer from '../Footer';
 import Navbar from '../Navbar.js'
+import Projects from '../HomeComponents/Projects';
 
 class Home extends React.Component {
 
@@ -14,7 +15,7 @@ class Home extends React.Component {
       <Navbar/>
       <HeroSection />
       <AboutUs/>
-      <Questions />
+      <Projects/>
       <Footer />
     </>
   );
