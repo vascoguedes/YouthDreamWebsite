@@ -1,0 +1,20 @@
+.ContactFormContainer {
+    width: 100%;
+    display: flex;
+    margin: 0px auto 50px auto;
+}
+
+
+.ContactForm {
+    width: 40%;
+    padding: 30px;
+    margin: auto 0px auto 25%;
+
+    background-color: #c0b73973;
+    border-radius: 30px;
+}
+
+.ContactFormContainer .pic {
+    opacity: 0.8;
+    margin-left: 40px;
+}

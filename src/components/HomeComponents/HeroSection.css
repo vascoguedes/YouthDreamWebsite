@@ -23,9 +23,25 @@
   background: -webkit-linear-gradient(60deg, #B6E8B7 0%, #0b3552 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow:hidden;
   font-size: 200px;
-  margin-top: -100px;
   font-family: LeagueGothic;
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+
+  animation: 
+    typing 1.5s steps(15, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(0, 0, 0, 0.733); }
 }
 
 .hero-container > p {

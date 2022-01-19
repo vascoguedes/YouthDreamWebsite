@@ -1,30 +1,33 @@
 import React from 'react';
 import './Projects.css';
 
+import ODS4 from '../../images/ods4.png'
+import ODS14 from '../../images/ods14.png'
+import ODS17 from '../../images/ods17.png'
+
 class Projects extends React.Component {
 
     render() {
 
         return (
-            <div className='projects'>
-                <h1>Os nossos projetos</h1>
+            <div id='projects' className='projects'>
+                <h1>Os ODS nos nossos projetos</h1>
                 <div className='container'>
 
-                    <div className='project1'>
-
-                        <div className='title'>Onde estão os ODS?</div>
+                    <div className='project'>
+                        <img src={ODS17} className='pic' />
                     </div>
 
-                    <div className='project2'>
-                        <div className='title'>Nahir e os ODS</div>
+                    <div className='project'>
+                        <img src={ODS17} className='pic'/>
                     </div>
 
-                    <div className='project3'>
-                        <div className='title'>Education Builders</div>
+                    <div className='project'>
+                        <img src={ODS4} className='pic'/>
                     </div>
 
-                    <div className='project4'>
-                        <div className='title'>Lixo Não</div>
+                    <div className='project'>
+                        <img src={ODS14} className='pic'/>
                     </div>
                 </div>
             </div>

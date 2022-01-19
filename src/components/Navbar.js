@@ -8,7 +8,7 @@ import {MdOutlineLogout} from "react-icons/md"
 class NavBar extends React.Component{
   render(){
 
-    let mainPageRefs = ["/", "/#herosection", "/#aboutUs", "/#questions"];
+    let mainPageRefs = ["/", "/#herosection", "/#aboutUs", "/#projects", "#contact"];
     let mainPage = mainPageRefs.includes(window.location.pathname);
 
     return(
@@ -20,7 +20,8 @@ class NavBar extends React.Component{
             <Nav className="me-auto">
               <Nav.Link href={mainPage ? "#herosection":"/"}>Página Inicial</Nav.Link>
               {mainPage ? <Nav.Link href={"#aboutUs"}>Quem somos</Nav.Link> : null}
-              {mainPage ? <Nav.Link href={"#questions"}>Os nossos projetos</Nav.Link> : null}
+              {mainPage ? <Nav.Link href={"#projects"}>Os nossos projetos</Nav.Link> : null}
+              {mainPage ? <Nav.Link href={"#contact"}>Contactar</Nav.Link> : null}
             </Nav>
           </Navbar.Collapse>
           {window.sessionStorage.getItem('login') ?  <Nav.Link className='endSessionButton' href="/log-in" onClick={() => window.sessionStorage.removeItem('login')}><MdOutlineLogout/>Terminar Sessão</Nav.Link>: null}
