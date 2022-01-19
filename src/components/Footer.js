@@ -35,7 +35,7 @@ function Footer() {
                         <h3>Youth Dream</h3>
                         <p>A YOUTH DREAM é uma associação juvenil fundada em junho de 2019 com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS).</p>
                     </div>
-                    <div class="col item social"><a onClick={() => window.open('www.instagram.com/youthdreamassociacao/')}><BsInstagram/></a><a href="#"><BsFacebook/></a><a href="#"><BsLinkedin/></a></div>
+                    <div class="col item social"><a onClick={() => window.open('http://www.instagram.com/youthdreamassociacao/')}><BsInstagram/></a><a onClick={() => window.open('http://www.facebook.com/youthdreamassociacao/')}><BsFacebook/></a><a onClick={() => window.open('http://www.linkedin.com/company/youthdreamassociacao/')}><BsLinkedin/></a></div>
                 </div>
                 <p class="copyright">Youth Dream © 2022</p>
             </div>
