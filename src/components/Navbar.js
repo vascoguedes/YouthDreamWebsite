@@ -20,7 +20,7 @@ class NavBar extends React.Component{
             <Nav className="me-auto">
               {mainPage ? <Nav.Link href={"#aboutUs"}>Quem somos</Nav.Link> : null}
               {mainPage ? <Nav.Link href={"#projects"}>Os nossos projetos</Nav.Link> : null}
-              {mainPage ? <Nav.Link href={"#contact"}>Contactar</Nav.Link> : null}
+              {mainPage ? <Nav.Link href={"/Contact"}>Contactar</Nav.Link> : null}
             </Nav>
           </Navbar.Collapse>
           {window.sessionStorage.getItem('login') ?  <Nav.Link className='endSessionButton' href="/log-in" onClick={() => window.sessionStorage.removeItem('login')}><MdOutlineLogout/>Terminar Sessão</Nav.Link>: null}

@@ -11,23 +11,23 @@ function Footer() {
 
   return (
     <div class="footer-dark">
-        <footer>
+        <footer id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Projetos</h3>
                         <ul>
-                            <li><a href="#">Nahir e os ODS</a></li>
-                            <li><a href="#">Education Builders</a></li>
-                            <li><a href="#">Lixo Não</a></li>
+                            <li><a href="#footer" onClick={() => window.open('https://www.instagram.com/diariodanahir/')}>Nahir e os ODS</a></li>
+                            <li><a href="#footer" onClick={() => window.open('https://www.instagram.com/educationbuilders/')}>Education Builders</a></li>
+                            <li><a href="#footer" onClick={() => window.open('https://www.instagram.com/lixo_nao/')}>Lixo Não</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Sobre nós</h3>
                         <ul>
-                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#aboutUs">Quem somos</a></li>
                             <li><a href="#">Parceiros</a></li>
-                            <li><a href="#">Contactos</a></li>
+                            <li><a href="/Contact">Contactos</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
