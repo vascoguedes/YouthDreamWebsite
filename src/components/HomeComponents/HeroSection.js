@@ -10,7 +10,7 @@ class HeroSection extends React.Component{
     return (
       <div className='hero-container' id='herosection' data-spy="scroll" data-target="#navbar" data-offset="0">
         
-        <h1>Youth Dream</h1>
+        <div className='logo'/>
       </div>
     );
   }

@@ -14,11 +14,10 @@ class NavBar extends React.Component{
     return(
       <Navbar bg="light" expand="lg" sticky="top" id="navbar">
         <Container>
-          <Navbar.Brand href="/" className="Informado" >Youth Dream</Navbar.Brand>
+          <div onClick={() => window.location.href = "/"} className="logo-navbar" />
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href={mainPage ? "#herosection":"/"}>Página Inicial</Nav.Link>
               {mainPage ? <Nav.Link href={"#aboutUs"}>Quem somos</Nav.Link> : null}
               {mainPage ? <Nav.Link href={"#projects"}>Os nossos projetos</Nav.Link> : null}
               {mainPage ? <Nav.Link href={"#contact"}>Contactar</Nav.Link> : null}

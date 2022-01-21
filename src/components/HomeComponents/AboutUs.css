@@ -8,28 +8,59 @@
     display: flex;
     width: 100%;
 
-    background-color: rgba(151, 205, 255, 0.151);
+    background-color: #75a176a8;
 }
 
 .AboutUs .container{
     margin-top: 2%;
+    margin-left: 10%;
+    text-align: left;
 }
+
+.container .Title {
+    font-size: 50px;
+    width: 35%;
+    overflow: hidden;
+    border-right: .15em solid rgb(53, 53, 53);
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 1.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 40 }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(144, 144, 144); }
+  }
 
 .AboutUs-description {
     font-size: 20px;
-    font-family: Arial;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 2%;
-    text-align: center;
+    margin-right: 5%;
+    text-align: justify;
 }
 
 
-.AboutUs .teampic {
+.AboutUs .pic {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
-    width: 30%;
-    margin-right: 5%;
+    width: 85%;
+    height: 100%;
+}
+
+.AboutUs .slider {
+    width: 45%;
+    height: 5%;
+    max-height: 400px;
+    margin-right: 2%;
 }

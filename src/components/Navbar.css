@@ -10,12 +10,18 @@
   z-index: 999;
 }
 
-.Informado {
-  font-size: 25px;
-  font-family: LeagueGothic;
-  background: -webkit-linear-gradient(60deg, #B6E8B7 10%, #1D4B69 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-navbar {
+  width: 140px;
+  height: 35px;
+  margin-right: 10px;
+  background-image: url('../images/logo.jpg');
+  background-size: cover;
+}
+
+.logo-navbar:hover {
+  cursor: pointer;
+  width: 143px;
+  height: 36px;
 }
 
 .Informado:hover {

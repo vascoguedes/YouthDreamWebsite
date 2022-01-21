@@ -20,14 +20,13 @@ function Footer() {
                             <li><a href="#">Nahir e os ODS</a></li>
                             <li><a href="#">Education Builders</a></li>
                             <li><a href="#">Lixo Não</a></li>
-                            <li><a href="#">Onde estão os ODS</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Sobre nós</h3>
                         <ul>
-                            <li><a href="#">História</a></li>
-                            <li><a href="#">Equipa</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Parceiros</a></li>
                             <li><a href="#">Contactos</a></li>
                         </ul>
                     </div>
