@@ -5,16 +5,11 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    display: flex;
     width: 100%;
-
     background-color: #75a176a8;
 }
 
 .AboutUs .container{
-    margin-top: 2%;
-    margin-left: 10%;
-    text-align: left;
 }
 
 .container .Title {
@@ -44,7 +39,6 @@
 .AboutUs-description {
     font-size: 20px;
     margin-top: 2%;
-    margin-right: 5%;
     text-align: justify;
 }
 
@@ -59,8 +53,5 @@
 }
 
 .AboutUs .slider {
-    width: 45%;
-    height: 5%;
     max-height: 400px;
-    margin-right: 2%;
 }

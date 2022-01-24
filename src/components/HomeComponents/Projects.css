@@ -1,39 +1,79 @@
 .projects {
-
-    width:100%;
     margin-bottom: 50px;
-
 }
 
 
 .projects >h1 {
     padding-top: 30px;
     padding-bottom: 30px;
-    font-family: 'Noto Serif'
+    font-family: 'Noto Serif';
 }
 
 .projects .container {
     padding-bottom: 50px;
-    display: flex;
-
-    margin-left: 25%;
 }
 
 .container .title {
     font-family: 'Noto Serif';
     font-size: 20px;
+}
+
+
+
+
+.flip-card {
+    width: 350px;
+    height: 250px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
     text-align: center;
-}
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    -webkit-box-shadow: -10px 0px 13px -7px #0000008c, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000a4, 10px 0px 13px -7px #000000ab, 5px 5px 15px 5px rgba(0,0,0,0);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(241, 241, 241, 0.37);
+    -webkit-box-shadow: -10px 0px 13px -7px #0000008c, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #000000a4, 10px 0px 13px -7px #000000ab, 5px 5px 15px 5px rgba(0,0,0,0);
+    color: bl;
+    transform: rotateY(180deg);
+  }
 
-.project {
-    margin: 0 20px 0 20px;
+  .projects .socialMedia {
+    margin-right: 5px;
+    color: rgb(170, 198, 206);
+  }
 
-    -webkit-box-shadow: -2px -1px 15px 7px rgba(0,0,0,0.5);
-    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
-    box-shadow: -4px -3px 45px 21px rgba(54, 98, 56, 0.082);
-}
-
-.project .pic {
-    width: 300px;
-    object-fit: cover;
-}
+  .projects .socialMedia:hover {
+    color: rgb(140, 169, 177);
+    cursor: pointer;
+  }

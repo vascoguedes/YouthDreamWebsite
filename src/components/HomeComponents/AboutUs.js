@@ -31,15 +31,15 @@ class AboutUs extends React.Component {
     };
 
     return (
-      <div className="AboutUs" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
+      <div className="AboutUs mt-5 row row-centered pos" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
         
-        <div className="container">
+        <div className="container col-md-7 pt-4">
           <div className="Title">Quem somos</div>
           <div className="AboutUs-description"> 
             A YOUTH DREAM é uma associação juvenil fundada em junho de 2019 com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS). Estes objetivos, adotados pela quase totalidade dos países do mundo, no contexto das Nações Unidas, definem as prioridades e aspirações do Desenvolvimento Sustentável Global para 2030.  Foi uma jovem gaiense de 17 anos, Beatriz Couto, que decidiu dar voz a este projeto e de o projetar depois com um conjunto de 8 jovens com capacidades e habilidades únicas que tornaram depois um projeto numa associação coesa e comprometida em agir com jovens e para jovens, para todos juntos transformarmos o Mundo em nome dos Povos e do Planeta, seguindo a Agenda 2030.
           </div>
         </div>    
-        <Carousel className="slider" responsive={responsive} infinite={true} autoPlay={true} showDots={true}>
+        <Carousel className="slider col-md-4" responsive={responsive} infinite={true} autoPlay={true} showDots={true}>
           <img className="pic" src={historia0} />
           <img className="pic" src={historia1} />
           <img className="pic" src={historia2} />

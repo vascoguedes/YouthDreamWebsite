@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer';
 import ContactForm from '../HomeComponents/ContactForm';
 import Navbar from '../Navbar.js'
 
@@ -9,6 +10,7 @@ class Contact extends React.Component {
       <>
         <Navbar/>
         <ContactForm/>
+        <Footer/>
       </>
     );
     }    

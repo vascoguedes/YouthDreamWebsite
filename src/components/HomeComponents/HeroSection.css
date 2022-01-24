@@ -20,11 +20,13 @@
 }
 
 .hero-container .logo {
-  width: 700px;
+  width: 80%;
   height: 175px;
   margin-right: 10px;
   background-image: url('../../images/logo.png');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-container > p {
