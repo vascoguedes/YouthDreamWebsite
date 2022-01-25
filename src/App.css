@@ -1,4 +1,6 @@
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
+  safari { background-color:#FFF }
   #safari { background-color:#FFF }
 }
 
