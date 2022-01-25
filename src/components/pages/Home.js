@@ -12,6 +12,7 @@ class Home extends React.Component {
   render() {
     return (
     <>
+      <meta name="theme-color" content="#ffffff"></meta>
       <Navbar/>
       <HeroSection />
       <AboutUs/>
