@@ -2,15 +2,14 @@
     margin-bottom: 50px;
 }
 
-
-.projects >h1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: 'Noto Serif';
-}
-
 .projects .container {
     padding-bottom: 50px;
+}
+
+.projects >h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Noto Serif';
 }
 
 .container .title {
@@ -66,6 +65,14 @@
     color: bl;
     transform: rotateY(180deg);
   }
+
+.flip-card-back >h1 {
+    font-family: 'Noto Serif';
+}
+
+.flip-card-back >p {
+  font-family: 'Open Sans';
+}
 
   .projects .socialMedia {
     margin-right: 5px;

@@ -13,6 +13,7 @@
 }
 
 .container .Title {
+    font-family: 'Noto Serif';
     font-size: 50px;
     width: 35%;
     overflow: hidden;
@@ -37,7 +38,8 @@
   }
 
 .AboutUs-description {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: 'Open Sans';
     margin-top: 2%;
     text-align: justify;
 }
