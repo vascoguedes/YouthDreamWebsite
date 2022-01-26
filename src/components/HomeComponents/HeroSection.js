@@ -9,7 +9,6 @@ class HeroSection extends React.Component{
   render() {
     return (
       <div className='hero-container' id='herosection' data-spy="scroll" data-target="#navbar" data-offset="0">
-        
         <div className='logo'/>
       </div>
     );

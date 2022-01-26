@@ -52,16 +52,16 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    -webkit-box-shadow: -10px 0px 13px -7px #0000008c, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: -10px 0px 13px -7px #000000a4, 10px 0px 13px -7px #000000ab, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: -10px 0px 13px -7px #00000042, 10px 0px 13px -7px #00000042, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #00000042, 10px 0px 13px -7px #00000042, 5px 5px 15px 5px rgba(0,0,0,0);
     color: black;
   }
   
   /* Style the back side */
   .flip-card-back {
     background-color: rgba(241, 241, 241, 0.37);
-    -webkit-box-shadow: -10px 0px 13px -7px #0000008c, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: -10px 0px 13px -7px #000000a4, 10px 0px 13px -7px #000000ab, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: -10px 0px 13px -7px #00000042, 10px 0px 13px -7px #00000042, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: -10px 0px 13px -7px #00000042, 10px 0px 13px -7px #00000042, 5px 5px 15px 5px rgba(0,0,0,0);
     color: bl;
     transform: rotateY(180deg);
   }

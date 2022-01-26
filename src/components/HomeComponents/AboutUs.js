@@ -31,9 +31,9 @@ class AboutUs extends React.Component {
     };
 
     return (
-      <div className="AboutUs mt-5 row row-centered pos" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
+      <div className="AboutUs mt-5 row row-centered pos w-100" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
         
-        <div className="container col-md-7 pt-4">
+        <div className="container col-md-5 pt-4">
           <div className="Title">Quem somos</div>
           <div className="AboutUs-description"> 
             A YOUTHDREAM é uma associação juvenil, fundada em junho de 2019, com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS), das Nações Unidas.
