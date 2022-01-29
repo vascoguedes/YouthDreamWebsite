@@ -7,6 +7,8 @@
 
     width: 100%;
     background-color: #75a176a8;
+
+    margin-left: 0 !important;
 }
 
 .AboutUs .container{
@@ -14,21 +16,21 @@
 
 .container .Title {
     font-family: 'Noto Serif';
-    font-size: 50px;
-    width: 35%;
+    font-size: 45px;
+    width: 350px;
     overflow: hidden;
     border-right: .15em solid rgb(53, 53, 53);
     white-space: nowrap; /* Keeps the content on a single line */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-        typing 1.5s steps(40, end),
+        typing 2s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 40 }
+    to { width: 350px }
   }
   
   /* The typewriter cursor effect */
