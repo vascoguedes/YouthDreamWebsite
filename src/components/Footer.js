@@ -26,15 +26,18 @@ function Footer() {
                         <h3>Sobre nós</h3>
                         <ul>
                             <li><a href="#aboutUs">Quem somos</a></li>
-                            <li><a href="#">Parceiros</a></li>
                             <li><a href="/Contact">Contactos</a></li>
+                        </ul>
+                        <h3 className='mt-2'>Email</h3>
+                        <ul>
+                            <a>youthdream2019@gmail.com</a>
                         </ul>
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Youth Dream</h3>
                         <p>A YOUTH DREAM é uma associação juvenil fundada em junho de 2019 com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS).</p>
                     </div>
-                    <div class="col item social"><a onClick={() => window.open('http://www.instagram.com/youthdreamassociacao/')}><BsInstagram/></a><a onClick={() => window.open('http://www.facebook.com/youthdreamassociacao/')}><BsFacebook/></a><a onClick={() => window.open('http://www.linkedin.com/company/youthdreamassociacao/')}><BsLinkedin/></a></div>
+                    <div class="col item social text-center"><a onClick={() => window.open('http://www.instagram.com/youthdreamassociacao/')}><BsInstagram/></a><a onClick={() => window.open('http://www.facebook.com/youthdreamassociacao/')}><BsFacebook/></a><a onClick={() => window.open('http://www.linkedin.com/company/youthdreamassociacao/')}><BsLinkedin/></a></div>
                 </div>
                 <p class="copyright">Youth Dream © 2022</p>
             </div>

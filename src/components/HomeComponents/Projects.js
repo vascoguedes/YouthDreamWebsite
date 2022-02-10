@@ -14,7 +14,6 @@ class Projects extends React.Component {
             <div id='projects' className='projects row row-centered pos w-100 d-flex justify-content-center'>
                 <h1>Os nossos projetos</h1>
                 <div className='container row d-flex justify-content-center'>
-
                     <div className="flip-card col-4 mr-2 mx-4">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
@@ -31,7 +30,7 @@ class Projects extends React.Component {
                         </div>
                     </div>
 
-                    <div className="flip-card col-4 mt-md-0 mt-sm-4">
+                    <div className="flip-card col-4 mt-md-0 mt-4">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
                                 <img src={Education} style={{"width":"auto", "height":"100%"}}/>
@@ -48,7 +47,7 @@ class Projects extends React.Component {
                         </div>
                     </div>
 
-                    <div className="flip-card col-4 mt-lg-0 mt-sm-4 mx-4">
+                    <div className="flip-card col-4 mt-lg-0 mt-4 mx-4">
                         <div className="flip-card-inner">
                             <div className="flip-card-front">
                                 <img src={Lixo} style={{"width":"auto", "height":"100%"}}/>
