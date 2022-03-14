@@ -3,10 +3,14 @@ import '../../App.css';
 import './AboutUs.css';
 import Carousel from "react-multi-carousel";
 
-import historia0 from "../../images/historia0.jpg"
-import historia1 from "../../images/historia1.jpg"
-import historia2 from "../../images/historia2.jpg"
-import historia3 from "../../images/historia3.jpg"
+import historia0 from "../../images/1.jpg"
+import historia1 from "../../images/2.jpg"
+import historia2 from "../../images/3.jpg"
+import historia3 from "../../images/4.jpg"
+import historia4 from "../../images/5.jpg"
+import historia5 from "../../images/6.jpg"
+import historia6 from "../../images/7.jpg"
+import historia7 from "../../images/8.jpg"
 
 class AboutUs extends React.Component {
   
@@ -46,6 +50,10 @@ class AboutUs extends React.Component {
           <img className="pic" src={historia1} />
           <img className="pic" src={historia2} />
           <img className="pic" src={historia3} />
+          <img className="pic" src={historia4} />
+          <img className="pic" src={historia5} />
+          <img className="pic" src={historia6} />
+          <img className="pic" src={historia7} />
         </Carousel>  
       </div>
     );
