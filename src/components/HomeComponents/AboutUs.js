@@ -35,26 +35,28 @@ class AboutUs extends React.Component {
     };
 
     return (
-      <div className="AboutUs mt-5 row row-centered pos w-100" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
-        
-        <div className="container col-xl-7 col-lg-6 col-sm-8 col-11 pt-4">
-          <div className="Title">Quem somos</div>
-          <div className="AboutUs-description"> 
-            A YOUTHDREAM é uma associação juvenil, fundada em junho de 2019, com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS), das Nações Unidas.
-            <br/>
-            Seguindo a Agenda 2030 de 17 ODS, estabelecidos pela totalidade dos estados-membros da ONU, procuramos contribuir, através de iniciativas de divulgação e sensibilização, para a génese de uma sociedade digna, inclusiva e igualitária.
-          </div>
-        </div>    
-        <Carousel className="slider col-xl-4 col-lg-5 col-11 mt-sm-0 mt-3 text-center" responsive={responsive} infinite={true} autoPlay={true} showDots={true}>
-          <img className="pic" src={historia0} />
-          <img className="pic" src={historia1} />
-          <img className="pic" src={historia2} />
-          <img className="pic" src={historia3} />
-          <img className="pic" src={historia4} />
-          <img className="pic" src={historia5} />
-          <img className="pic" src={historia6} />
-          <img className="pic" src={historia7} />
-        </Carousel>  
+      <div className="AboutUs mt-5 pos w-100" id='aboutUs' data-spy="scroll" data-target="#navbar" data-offset="0">
+        <div className='container-fluid row w-100 d-flex justify-content-center align-items-center'>
+
+          <div className=" col-xl-5 col-lg-6 col-md-8 col-sm-8 col-12 pt-4 p-sm-5 p-3 m-0 text-center">
+            <div className="Title">Quem somos</div>
+            <div className="AboutUs-description"> 
+              A YOUTHDREAM é uma associação juvenil, fundada em junho de 2019, com o propósito de promover os Objetivos de Desenvolvimento Sustentável (ODS), das Nações Unidas.
+              <br/>
+              Seguindo a Agenda 2030 de 17 ODS, estabelecidos pela totalidade dos estados-membros da ONU, procuramos contribuir, através de iniciativas de divulgação e sensibilização, para a génese de uma sociedade digna, inclusiva e igualitária.
+            </div>
+          </div>    
+          <Carousel className="slider col-xl-5 col-lg-6 col-md-7 p-5 m-0" responsive={responsive} infinite={true} autoPlay={true} showDots={true}>
+            <img className="pic" src={historia0} />
+            <img className="pic" src={historia1} />
+            <img className="pic" src={historia2} />
+            <img className="pic" src={historia3} />
+            <img className="pic" src={historia4} />
+            <img className="pic" src={historia5} />
+            <img className="pic" src={historia6} />
+            <img className="pic" src={historia7} />
+          </Carousel>
+        </div>  
       </div>
     );
   }

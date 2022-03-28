@@ -20,11 +20,12 @@ class Projects extends React.Component {
                                 <img src={Nahir} style={{"width":"auto", "height":"100%"}}/>
                             </div>
                             <div className="flip-card-back row row-centered p-2">
-                                <h1>Nahir e os ODS</h1>
-                                <p>O Livro pretende levar o conceito de desenvolvimento sustentável ao maior número de crianças possível, sendo transversal aos 17 ODS.</p>
+                                <h1 className='m-0'>Nahir e os ODS</h1>
+                                <p className='m-0'>O Livro pretende levar o conceito de desenvolvimento sustentável ao maior número de crianças possível, sendo transversal aos 17 ODS.</p>
                                 <div>
                                     <BsInstagram size={25} className='socialMedia' onClick={() => window.open('https://www.instagram.com/diariodanahir/')}/>
-                                    <button onClick={() => window.location.href = "/Nahir&ODS"}>Mais info</button>
+                                    <br/>
+                                    <button className='mt-1' onClick={() => window.location.href = "/Nahir&ODS"}>Mais info</button>
                                 </div>
                             </div>
                         </div>

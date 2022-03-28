@@ -5,16 +5,13 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    width: 100%;
     background-color: #75a176a8;
-
-    margin-left: 0 !important;
 }
 
 .AboutUs .container{
 }
 
-.container .Title {
+.AboutUs .Title {
     font-family: 'Noto Serif';
     font-size: 45px;
     width: 350px;
