@@ -13,8 +13,8 @@
 
 .AboutUs .Title {
     font-family: 'Noto Serif';
-    font-size: 45px;
-    width: 350px;
+    font-size: 40px;
+    width: 310px;
     overflow: hidden;
     border-right: .15em solid rgb(53, 53, 53);
     white-space: nowrap; /* Keeps the content on a single line */
@@ -27,7 +27,7 @@
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
-    to { width: 350px }
+    to { width: 310px }
   }
   
   /* The typewriter cursor effect */
@@ -37,7 +37,7 @@
   }
 
 .AboutUs-description {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Open Sans';
     margin-top: 2%;
     text-align: justify;
