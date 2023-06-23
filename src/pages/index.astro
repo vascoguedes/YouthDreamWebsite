@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/home/HeroSection.astro';
+import AboutUs from '../components/home/AboutUs.astro';
+import Contacts from '../components/home/Contacts.astro';
+import OurProjects from '../components/home/OurProjects.astro';
+---
+
+<Layout title="YouthDream">
+	<HeroSection />
+	<AboutUs />
+	<OurProjects />
+	<Contacts />	
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+</style>
