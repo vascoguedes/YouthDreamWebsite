@@ -126,34 +126,32 @@
 
 <script>
     document.getElementById('myForm')?.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission behavior
-      
-      // Call the function to handle the post request in the background
-      submitForm();
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        const formData = { projects : [] };
+        const formInputs = event.target.querySelectorAll('input'); // Select all input elements within the form
+
+        formInputs.forEach((input) => {
+            if (input.type == 'checkbox' && input.checked) {
+                formData['projects'].push({ id: input.name })
+            } else {
+                formData[input.name] = input.value;
+            }
+        });
+
+        submitForm(formData);
     });
 
-    function submitForm() {
-      const form = document.getElementById('myForm');
-      const formData = new FormData(form);
+    function submitForm(formData) {
 
-      fetch('https://backoffice.youthdream.pt/api/registerVolunteer', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.json())
-      .then(data => {
-        // Handle the response data as needed
-        console.log(data);
-
-        // Check if the response indicates success (adjust this condition based on the actual response)
-        if (data.success) {
-          // Clear the form on success
-          form?.reset();
-        }
-      })
-      .catch(error => {
-        // Handle errors
-        console.error('Error:', error);
-      });
+        fetch('http://localhost:3001/api/registerVolunteer', {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(formData),
+        },)
+        .catch(error => {
+            // Handle errors
+            console.error('Error:', error);
+        });
     }
   </script>
