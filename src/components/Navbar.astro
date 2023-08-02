@@ -7,7 +7,7 @@
         </a>
       </div>
       <div class="flex lg:hidden">
-        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+        <button id="openMenu" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -24,7 +24,7 @@
       </div>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
-    <div class="lg:hidden" role="dialog" aria-modal="true">
+    <div id="mobileMenu" hidden role="dialog" aria-modal="true">
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-50"></div>
       <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -35,7 +35,7 @@
           </a>
           <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Close menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <svg id="closeMenu" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -55,36 +55,30 @@
 </header>
 
 <script>
-	
-	// Get all the tab links
-	const tabLinks = document.querySelectorAll('nav #desktop-menu a');
 
-	// Add click event listeners to each tab link
-	tabLinks.forEach((tabLink) => {
-
-		tabLink.addEventListener('click', (event) => {
-			// Remove the 'active' class from all tab links
-			tabLinks.forEach((link) => {
-				link.className = "inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700";
-			});
-
-			tabLink.className = "inline-flex items-center border-b-2 border-blueLixoNao px-1 pt-1 text-sm font-medium text-gray-900"
-		});
-	});
-
-	// Get all the tab links
-	const mobileTabLinks = document.querySelectorAll('nav #mobile-menu a');
+	// // Get all the tab links
+	const mobileTabLinks = document.querySelectorAll('#mobileMenu a');
+  const closeMenu = document.getElementById('closeMenu');
+  const openMenu = document.getElementById('openMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
 
 	// Add click event listeners to each tab link
 	mobileTabLinks.forEach((tabLink) => {
 
 		tabLink.addEventListener('click', (event) => {
-			mobileTabLinks.forEach((link) => {
-				link.className = "block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700";
-			});
-
-			tabLink.className = "block border-l-4 border-blueLixoNao py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-blueLixoNao-dark bg-gray-50 hover:text-gray-700"
+      if (mobileMenu)
+        mobileMenu.hidden = true
 		});
 	});
+
+  closeMenu?.addEventListener('click', () => {
+    if (mobileMenu)
+      mobileMenu.hidden = true
+  })
+
+  openMenu?.addEventListener('click', () => {
+    if (mobileMenu)
+      mobileMenu.hidden = false
+  })
 
 </script>
