@@ -114,7 +114,9 @@
                 </div>
             
                 <div class="mt-6 flex items-center justify-end gap-x-6">
-                <button type="submit" class="rounded-md bg-blueLixoNao px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blueLixoNao-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
+                    <p id="sucessMessage" hidden class="text-green-600 text-sm" >Registo efetuado com sucesso!</p>
+                    <p id="errorMessage" hidden class="text-red-600 text-sm" >Ocorreu um erro! Tente novamente mais tarde</p>
+                    <button type="submit" class="rounded-md bg-blueLixoNao px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blueLixoNao-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar</button>
                 </div>
             </form>
         </div>
@@ -143,16 +145,20 @@
             mode: 'no-cors',
             body: JSON.stringify(formData),
         },)
-        .then(() =>
+        .then(() => {
             formInputs.forEach((input) => {
                 if (input.type != 'checkbox') {
                     input.value = ""
                 }
             })
-        )
+            
+            document.getElementById('sucessMessage').hidden = false
+        })
         .catch(error => {
             // Handle errors
             console.error('Error:', error);
+
+            document.getElementById('errorMessage').hidden = false
         });
     });
   </script>
